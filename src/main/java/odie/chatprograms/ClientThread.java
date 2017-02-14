@@ -45,7 +45,7 @@ class ClientThread extends Thread {
                 while(true){
                     OutputStream.println("Enter your name");
                     Name = InputStream.readLine().trim();
-                    if (name.indexOf('@') == -1) {
+                    if (Name.indexOf('@') == -1) {
                       break;
                     } else {
                         OutputStream.println("The name should not contain '@' character.");
